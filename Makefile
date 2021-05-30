@@ -1,1 +1,1 @@
-depende
+dependencies: add_darknet get_tiny_yolo_v3_weights get_yolo_v3_w
