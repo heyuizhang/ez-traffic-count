@@ -6,4 +6,7 @@ add_darknet:
 	git submodule update 
 
 get_tiny_yolo_v3_weights:
-	wget https://pjreddie.com/media/files/yolov3
+	wget https://pjreddie.com/media/files/yolov3-tiny.weights
+	mv yolov3-tiny.weights data/
+
+ge
