@@ -11,3 +11,7 @@ get_tiny_yolo_v3_weights:
 
 get_yolo_v3_weights:
 	wget https://pjreddie.com/media/files/yolov3.weights
+	mv yolov3.weights data/
+
+
+
