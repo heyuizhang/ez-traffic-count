@@ -73,3 +73,38 @@ def main():
 
     state = SessionState.get(upload_key = None, enabled = True, 
     start = False, conf = 70, nms = 50, run = False)
+    hide_streamlit_widgets()
+    """
+    #  Traffic Flow Counter :blue_car:  :red_car:
+    Upload a video file to track and count vehicles. Don't forget to change parameters to tune the model!
+
+    #### Features to be added in the future:
+    + speed measurement
+    + traffic density
+    + vehicle type distribution
+    """
+
+    with st.sidebar:
+        """
+        ## :floppy_disk: Parameters  
+
+        """
+        state.conf, state.nms = parameter_sliders(
+            keys, state.enabled, value = [state.conf, state.nms])
+        
+        st.text("")
+        st.text("")
+        st.text("")
+
+        """
+        #### :desktop_computer: [Source code in Github](https://github.com/aldencabajar/traffic_flow_counter)
+
+        """
+
+    #set model confidence and nms threshold 
+    if (state.conf is not None):
+        obj_detector.confidence = state.conf/ 100
+    if (state.nms is not None):
+        obj_detector.nms_threshold = state.nms/ 100 
+
+
