@@ -178,3 +178,30 @@ def ProcessFrames(vf, tracker, obj_detector,stop):
     new_car_count_txt = st.empty()
     fps_meas_txt = st.empty()
     bar = st.progress(frame_counter)
+    stframe = st.empty()
+    start = time.time()
+
+    while vf.isOpened():
+        # if frame is read correctly ret is True
+        ret, frame = vf.read()
+        if _stop:
+            break
+        if not ret:
+            print("Can't receive frame (stream end?). Exiting ...")
+        labels, current_boxes, confidences = obj_detector.ForwardPassOutput(frame)
+        frame = tc.drawBoxes(frame, labels, current_boxes, confidences) 
+        new_car_count = tracker.TrackCars(current_boxes)
+        new_car_count_txt.markdown(f'**Total car count:** {new_car_count}')
+
+        end = time.time()
+
+        frame_counter += 1
+        fps_measurement = frame_counter/(end - start)
+        fps_meas_txt.markdown(f'**Frames per second:** {fps_measurement:.2f}')
+        bar.progress(frame_counter/num_frames)
+
+        frm = cv2.cvtColor(frame, cv2.COLOR_BGR2RGB)
+        stframe.image(frm, width = 720)
+
+
+main()
