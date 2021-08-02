@@ -140,3 +140,41 @@ def main():
             else:
                 state.run = True
                 trigger_rerun()
+
+
+
+def hide_streamlit_widgets():
+    """
+    hides widgets that are displayed by streamlit when running
+    """
+    hide_streamlit_style = """
+            <style>
+            #MainMenu {visibility: hidden;}
+            footer {visibility: hidden;}
+            </style>
+            """
+    st.markdown(hide_streamlit_style, unsafe_allow_html=True) 
+
+def ProcessFrames(vf, tracker, obj_detector,stop): 
+    """
+        main loop for processing video file:
+        Params
+        vf = VideoCapture Object
+        tracker = Tracker Object that was instantiated 
+        obj_detector = Object detector (model and some properties) 
+    """
+
+    try:
+        num_frames = int(vf.get(cv2.CAP_PROP_FRAME_COUNT))
+        fps = int(vf.get(cv2.CAP_PROP_FPS)) 
+        print('Total number of frames to be processed:', num_frames,
+        '\nFrame rate (frames per second):', fps)
+    except:
+        print('We cannot determine number of frames and FPS!')
+
+
+    frame_counter = 0
+    _stop = stop.button("stop")
+    new_car_count_txt = st.empty()
+    fps_meas_txt = st.empty()
+    bar = st.progress(frame_counter)
