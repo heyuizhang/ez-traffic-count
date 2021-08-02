@@ -108,3 +108,35 @@ def main():
         obj_detector.nms_threshold = state.nms/ 100 
 
 
+
+    upload = st.empty()
+    start_button = st.empty()
+    stop_button = st.empty()
+
+    with upload:
+        f = st.file_uploader('Upload Video file (mpeg/mp4 format)', key = state.upload_key)
+    if f is not None:
+        tfile  = tempfile.NamedTemporaryFile(delete = True)
+        tfile.write(f.read())
+
+        upload.empty()
+        vf = cv2.VideoCapture(tfile.name)
+
+        if not state.run:
+            start = start_button.button("start")
+            state.start = start
+        
+        if state.start:
+            start_button.empty()
+            #state.upload_key = str(randint(1000, int(1e6)))
+            state.enabled = False
+            if state.run:
+                tfile.close()
+                f.close()
+                state.upload_key = str(randint(1000, int(1e6)))
+                state.enabled = True
+                state.run = False
+                ProcessFrames(vf, tracker, obj_detector, stop_button)
+            else:
+                state.run = True
+                trigger_rerun()
