@@ -52,3 +52,40 @@ class ObjectDetector:
                     # scale the predictions back to the original size of image
                     box = detection[0:4] * np.array([W,H]*2) 
                     (cX, cY, width, height) = box.astype(int)
+
+                    # get the top and left-most coordinate of the bounding box
+                    x = int(cX - (width / 2))
+                    y = int(cY - (height / 2))
+
+                    #update list
+                    boxes.append([int(i) for i in [x, y, width, height]])
+                    class_lst.append(class_id)
+                    confidences.append(float(conf))
+        #apply non maximum suppression which outputs the final predictions 
+        idx = np.array(cv2.dnn.NMSBoxes(boxes, confidences, self.confidence, self.nms_threshold)).flatten()
+        return [LABELS[class_lst[i]] for i in idx], [boxes[i] for i in idx], [confidences[i] for i in idx]
+
+
+def drawBoxes(frame, labels, boxes, confidences):
+    boxColor = (128, 255, 0) # very light green
+    TextColor = (255, 255, 255) # white
+    boxThickness = 3 
+    textThickness = 2
+
+    for lbl, box, conf in zip(labels, boxes, confidences):
+        start_coord = tuple(box[:2])
+        w, h = box[2:]
+        end_coord = start_coord[0] + w, start_coord[1] + h
+
+    # text to be included to the output image
+        txt = '{} ({})'.format(', '.join([str(i) for i in DetermineBoxCenter(box)]), round(conf,3))
+        frame = cv2.rectangle(frame, start_coord, end_coord, boxColor, boxThickness)
+        frame = cv2.putText(frame, txt, start_coord, cv2.FONT_HERSHEY_SIMPLEX, 0.5, TextColor, 2)
+
+    return frame
+
+def DetermineBoxCenter(box):
+    cx = int(box[0] + (box[2]/2))
+    cy = int(box[1] + (box[3]/2))
+
+    return [cx, cy]
