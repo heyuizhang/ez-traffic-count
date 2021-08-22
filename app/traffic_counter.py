@@ -89,3 +89,35 @@ def DetermineBoxCenter(box):
     cy = int(box[1] + (box[3]/2))
 
     return [cx, cy]
+
+def IsCarOnEdge(box, frame_shape = None, percent_win_edge = 10):
+    # consider vertical dimension for now
+    centers =  DetermineBoxCenter(box)
+    CarOnEdge = centers[1] >= (frame_shape[0] * (1 - percent_win_edge/100)) 
+
+    return CarOnEdge
+
+def GetFlattenedIndex(rowwise_idx, shape_of_matrix):
+    x, y = shape_of_matrix
+    ind = np.arange(y, (x+1)*y, step = y) - (y - rowwise_idx)
+    return ind
+
+
+def GetDistBetweenCenters(box_center1, box_center2): 
+    dist = np.linalg.norm(
+        box_center1[:, None, :] - box_center2[None, :, :], 
+        axis = 2)
+
+    return dist
+
+
+def CheckPreviousFrames(current_boxes, previous_frames):
+    ### PROTOTYPE CODE FOR CHECKING PREVIOUS FRAMES 
+    ImmediatePrevious = copy.deepcopy(previous_frames[-1])
+
+    unmatched_idx = np.arange(len(current_boxes))
+    unmatchedIds = []
+    for frame in previous_frames:
+        unmatchedIds += list(frame.keys())
+    unmatchedIds = list(set(unmatchedIds))
+        
