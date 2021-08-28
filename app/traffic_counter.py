@@ -121,3 +121,47 @@ def CheckPreviousFrames(current_boxes, previous_frames):
         unmatchedIds += list(frame.keys())
     unmatchedIds = list(set(unmatchedIds))
         
+
+    for frame in reversed(previous_frames):
+
+        if len(unmatched_idx) > 0 and len(unmatchedIds) > 0:
+            tmp_ids = np.array([k for k, v in frame.items() if k in unmatchedIds])
+            prev_box_centers = np.array(
+            [v['center'] for k, v in frame.items() if k in unmatchedIds])
+
+            prev_box_centers = []
+            tmp_ids = []
+
+            for k, v in frame.items():
+                if k in unmatchedIds:
+                    prev_box_centers.append(v['center'])
+                    tmp_ids.append(k)
+            tmp_ids = np.array(tmp_ids)
+            prev_box_centers= np.array(prev_box_centers)
+
+            tmp_current_boxes = [current_boxes[i] for i in unmatched_idx] 
+            current_box_centers = np.array(
+            [DetermineBoxCenter(box) for box in tmp_current_boxes])
+
+            # if there are no retrieved centers from the frame, skip over it since 
+            # it means that that frame does not contain the id
+            if len(prev_box_centers) == 0:
+                continue
+            
+            # get the corresponding distances
+            dist = GetDistBetweenCenters(prev_box_centers, current_box_centers)
+            #get the index with the minimum distance
+            min_idx = np.argmin(dist, axis = 1)
+            ind = GetFlattenedIndex(min_idx, dist.shape)
+            min_dist =  np.take(dist, ind)
+
+            # detect indices with distances greater than max of 
+            # the two dimensions
+            max_dim = np.array([max(v['box'][2:]) for k, v in frame.items() if k in unmatchedIds])  / 2
+            grt_than = [min_dist[i] > j for i, j in enumerate(max_dim)]
+            
+            
+            # update values in current box dict 
+            for  i in np.where(np.logical_not(grt_than))[0]:
+                id_ = tmp_ids[i]
+                box = tmp_current_boxes[min_idx[i]]
