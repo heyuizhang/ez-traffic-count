@@ -165,3 +165,42 @@ def CheckPreviousFrames(current_boxes, previous_frames):
             for  i in np.where(np.logical_not(grt_than))[0]:
                 id_ = tmp_ids[i]
                 box = tmp_current_boxes[min_idx[i]]
+                center = list(current_box_centers[min_idx[i]])
+                if id_ not in list(ImmediatePrevious.keys()):
+                    ImmediatePrevious[id_] ={'box': box, 'center': center}
+                else:
+                    ImmediatePrevious[tmp_ids[i]]['box'] = box
+                    ImmediatePrevious[tmp_ids[i]]['center'] = center
+
+            unmatchedIds = list(np.setdiff1d(np.array(unmatchedIds), 
+            tmp_ids[np.where(np.logical_not(grt_than))[0]])
+            )
+            unmatched_idx = np.setdiff1d(unmatched_idx, 
+            unmatched_idx[np.unique(min_idx[np.logical_not(grt_than)])])
+    return unmatched_idx, ImmediatePrevious            
+
+
+class CarsInFrameTracker:            
+
+    def __init__(self, num_previous_frames, frame_shape):
+        self.num_tracked_cars = 0 
+        self.frames = []
+        self.frame_shape = frame_shape
+        self.num_previous_frames = num_previous_frames
+
+        
+
+    def TrackCars(self, current_boxes): 
+        if len(self.frames) == 0:
+            box_dict = {}
+            # since these are fresh car instances, add id numbers from 0 to n cars 
+            ids = np.arange(len(current_boxes))
+            for box, id in zip(current_boxes, ids):
+                box_dict[id] = {'box': box, 'center': DetermineBoxCenter(box)}
+            self.num_tracked_cars = len(ids)
+            self.frames.append(box_dict)
+
+            return self.num_tracked_cars
+
+        
+        ImmediatePrevious = copy.deepcopy(self.frames[-1])
