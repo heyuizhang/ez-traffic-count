@@ -244,3 +244,46 @@ class CarsInFrameTracker:
             
         for key in CarsOnEdge:
             del curr_boxes_dict[key]
+        
+        
+        num_new_cars = len(new_centers)
+        self.num_tracked_cars += num_new_cars
+        self.frames.append(curr_boxes_dict)
+
+        if len(self.frames) > self.num_previous_frames:
+            self.frames.pop(0)
+
+        return self.num_tracked_cars
+
+
+if __name__ == '__main__':
+    ##### Main program for testing #######
+    # Initialize video stream 
+    # set parameters 
+    config =  'darknet/cfg/yolov3.cfg'
+    wt_file = 'data/yolov3.weights'
+    video_file ='data/4K Road traffic video for object detection and tracking - free download now!.mp4'  
+    out_video_file = 'annotated_try.avi'
+    FRAME_RATE = 30 # there is really no need of getting each and every frame
+
+    cap = cv2.VideoCapture(video_file)
+
+    try:
+        num_frames = int(cap.get(cv2.CAP_PROP_FRAME_COUNT))
+        fps = int(cap.get(cv2.CAP_PROP_FPS)) 
+        print('Total number of frames to be processed:', num_frames,
+        '\nFrame rate (frames per second):', fps)
+    except:
+        print('We cannot determine number of frames and FPS!')
+
+    grab = True 
+    counter = 0
+    num_frames_processed = 500 
+    writer = None
+    start = time.time()
+    pbar = tqdm.tqdm(total = 100)
+
+    # Initialize objects
+    tracker = CarsInFrameTracker(num_previous_frames = 10, frame_shape = (720, 1080))
+    obj_detector = ObjectDetector(wt_file, config, confidence = 0.7, nms_threshold=0.5)
+
