@@ -287,3 +287,42 @@ if __name__ == '__main__':
     tracker = CarsInFrameTracker(num_previous_frames = 10, frame_shape = (720, 1080))
     obj_detector = ObjectDetector(wt_file, config, confidence = 0.7, nms_threshold=0.5)
 
+
+    while grab & (counter < num_frames_processed):
+        (grab, frame) = cap.read()
+
+        #print('iteration', counter + 1)
+        pbar.set_postfix({'iteration': counter + 1,
+        'number of cars': tracker.num_tracked_cars})
+        H, W = frame.shape[:2]
+        if writer is None:
+            fourcc = cv2.VideoWriter_fourcc(*'MJPG')
+            writer = cv2.VideoWriter(out_video_file, fourcc, fps,  (W, H), True) 
+
+        if (((counter + 1) % int(fps // FRAME_RATE)) == 0) or (counter == 0):  
+            labels, current_boxes, confidences = obj_detector.ForwardPassOutput(frame)
+            frame = drawBoxes(frame, labels, current_boxes, confidences) 
+            new_car_count = tracker.TrackCars(current_boxes)
+
+            #print('new car count = ', new_car_count)
+            frame = cv2.putText(frame, '{} {}'.format('total car count:', str(new_car_count)), 
+            (800, 50), cv2.FONT_HERSHEY_SIMPLEX, 1, (255, 255, 255), 2)
+            frame = cv2.putText(frame, '{} {}'.format('current car count:', len(tracker.frames[-1])), 
+            (800, 80), cv2.FONT_HERSHEY_SIMPLEX, 1, (255, 255, 255), 2)
+        
+
+        counter += 1
+        # add frame number 
+        frame = cv2.putText(frame, 'frame: ' + str(counter), (800, 110),
+        cv2.FONT_HERSHEY_SIMPLEX, 1, (255, 255, 255), 2 )
+        pbar.update(100/num_frames_processed)
+        
+        writer.write(frame)
+
+    writer.release()
+    pbar.close()
+    cap.release()
+
+    end = time.time()
+
+    print('total processing time =', round(end - start, 3), 's')
