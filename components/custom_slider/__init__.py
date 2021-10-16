@@ -8,4 +8,5 @@ build_dir = os.path.join(root_dir, 'frontend/build')
 _RELEASE = True
 
 if _RELEASE:
-    _component_func 
+    _component_func = components.declare_component(
+ 
