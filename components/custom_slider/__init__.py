@@ -15,4 +15,4 @@ if _RELEASE:
 
 
 else:
-    _c
+    _component_func = components.declare
