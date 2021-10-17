@@ -10,4 +10,9 @@ _RELEASE = True
 if _RELEASE:
     _component_func = components.declare_component(
         "custom_slider",
-        pat
+        path = build_dir
+    )
+
+
+else:
+    _c
