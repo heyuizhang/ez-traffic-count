@@ -15,4 +15,5 @@ if _RELEASE:
 
 
 else:
-    _component_func = components.declare
+    _component_func = components.declare_component(
+        "custom_slider
