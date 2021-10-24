@@ -16,4 +16,9 @@ if _RELEASE:
 
 else:
     _component_func = components.declare_component(
-        "custom_slider
+        "custom_slider",
+        url="http://localhost:3001",
+    )
+
+
+d
