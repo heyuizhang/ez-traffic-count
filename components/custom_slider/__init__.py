@@ -21,4 +21,5 @@ else:
     )
 
 
-def custom_slider(label: str, minVal: int, maxVal: int, enabled: bo
+def custom_slider(label: str, minVal: int, maxVal: int, enabled: bool,  
+                    Ini
