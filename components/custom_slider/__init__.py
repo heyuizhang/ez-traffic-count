@@ -21,4 +21,4 @@ else:
     )
 
 
-d
+def custom_slider(label: str, minVal:
