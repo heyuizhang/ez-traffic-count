@@ -22,4 +22,4 @@ else:
 
 
 def custom_slider(label: str, minVal: int, maxVal: int, enabled: bool,  
-                    Ini
+                    InitialValue: int = 0, key = None):
