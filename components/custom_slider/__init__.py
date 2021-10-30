@@ -24,4 +24,4 @@ else:
 def custom_slider(label: str, minVal: int, maxVal: int, enabled: bool,  
                     InitialValue: int = 0, key = None):
     return(_component_func(label = label, minVal = minVal, maxVal = maxVal,
-   
+                              enabled
