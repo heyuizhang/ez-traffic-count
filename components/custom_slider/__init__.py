@@ -27,4 +27,4 @@ def custom_slider(label: str, minVal: int, maxVal: int, enabled: bool,
                               enabled = enabled, InitialValue= InitialValue, key = key))
 
 
-# Add some t
+# Add some test code to play with the compone
