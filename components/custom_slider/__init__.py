@@ -28,4 +28,4 @@ def custom_slider(label: str, minVal: int, maxVal: int, enabled: bool,
 
 
 # Add some test code to play with the component while it's in development.
-# Durin
+# During development, we can run this just as 
