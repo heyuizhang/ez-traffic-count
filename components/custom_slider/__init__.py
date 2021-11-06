@@ -33,4 +33,7 @@ def custom_slider(label: str, minVal: int, maxVal: int, enabled: bool,
 if not _RELEASE:
     import streamlit as st
 
-    st.subheader("Test com
+    st.subheader("Test components")
+
+    with st.sidebar:
+       
