@@ -36,4 +36,5 @@ if not _RELEASE:
     st.subheader("Test components")
 
     with st.sidebar:
-       
+        st.header("Parameters")
+        val = cust
