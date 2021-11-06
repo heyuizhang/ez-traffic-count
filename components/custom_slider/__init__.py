@@ -31,4 +31,6 @@ def custom_slider(label: str, minVal: int, maxVal: int, enabled: bool,
 # During development, we can run this just as we would any other Streamlit
 # app: `$ streamlit run my_component/__init__.py`
 if not _RELEASE:
-    import streamlit
+    import streamlit as st
+
+    st.subheader("Test com
