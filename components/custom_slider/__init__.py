@@ -37,4 +37,5 @@ if not _RELEASE:
 
     with st.sidebar:
         st.header("Parameters")
-        val = custom_slider(label = "Model Confidence",
+        val = custom_slider(label = "Model Confidence", minVal = 0, maxVal = 100, 
+        InitialValu
