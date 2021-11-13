@@ -39,4 +39,5 @@ if not _RELEASE:
         st.header("Parameters")
         val = custom_slider(label = "Model Confidence", minVal = 0, maxVal = 100, 
         InitialValue = 70, enabled = True, key=2)
-        pr
+        print(val)
+        custom_slider
