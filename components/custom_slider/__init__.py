@@ -40,4 +40,4 @@ if not _RELEASE:
         val = custom_slider(label = "Model Confidence", minVal = 0, maxVal = 100, 
         InitialValue = 70, enabled = True, key=2)
         print(val)
-        custom_slider
+        custom_slider(label = "Overlap threshold", minVal = 0
