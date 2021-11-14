@@ -41,4 +41,6 @@ if not _RELEASE:
         InitialValue = 70, enabled = True, key=2)
         print(val)
         custom_slider(label = "Overlap threshold", minVal = 0, maxVal = 100,
-         InitialValue = 50
+         InitialValue = 50, enabled= False, key=1)
+
+
