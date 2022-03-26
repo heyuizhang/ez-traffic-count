@@ -1578,3 +1578,45 @@ pre code {
     order: 3;
   }
   .order-xl-4 {
+    -ms-flex-order: 4;
+    order: 4;
+  }
+  .order-xl-5 {
+    -ms-flex-order: 5;
+    order: 5;
+  }
+  .order-xl-6 {
+    -ms-flex-order: 6;
+    order: 6;
+  }
+  .order-xl-7 {
+    -ms-flex-order: 7;
+    order: 7;
+  }
+  .order-xl-8 {
+    -ms-flex-order: 8;
+    order: 8;
+  }
+  .order-xl-9 {
+    -ms-flex-order: 9;
+    order: 9;
+  }
+  .order-xl-10 {
+    -ms-flex-order: 10;
+    order: 10;
+  }
+  .order-xl-11 {
+    -ms-flex-order: 11;
+    order: 11;
+  }
+  .order-xl-12 {
+    -ms-flex-order: 12;
+    order: 12;
+  }
+  .offset-xl-0 {
+    margin-left: 0;
+  }
+  .offset-xl-1 {
+    margin-left: 8.333333%;
+  }
+  .offset-xl-2 {
