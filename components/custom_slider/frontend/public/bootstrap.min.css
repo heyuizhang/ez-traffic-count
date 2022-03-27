@@ -1722,3 +1722,52 @@ pre code {
 .table-secondary tbody + tbody,
 .table-secondary td,
 .table-secondary th,
+.table-secondary thead th {
+  border-color: #b3b7bb;
+}
+.table-hover .table-secondary:hover {
+  background-color: #c8cbcf;
+}
+.table-hover .table-secondary:hover > td,
+.table-hover .table-secondary:hover > th {
+  background-color: #c8cbcf;
+}
+.table-success,
+.table-success > td,
+.table-success > th {
+  background-color: #c3e6cb;
+}
+.table-success tbody + tbody,
+.table-success td,
+.table-success th,
+.table-success thead th {
+  border-color: #8fd19e;
+}
+.table-hover .table-success:hover {
+  background-color: #b1dfbb;
+}
+.table-hover .table-success:hover > td,
+.table-hover .table-success:hover > th {
+  background-color: #b1dfbb;
+}
+.table-info,
+.table-info > td,
+.table-info > th {
+  background-color: #bee5eb;
+}
+.table-info tbody + tbody,
+.table-info td,
+.table-info th,
+.table-info thead th {
+  border-color: #86cfda;
+}
+.table-hover .table-info:hover {
+  background-color: #abdde5;
+}
+.table-hover .table-info:hover > td,
+.table-hover .table-info:hover > th {
+  background-color: #abdde5;
+}
+.table-warning,
+.table-warning > td,
+.table-warning > th {
