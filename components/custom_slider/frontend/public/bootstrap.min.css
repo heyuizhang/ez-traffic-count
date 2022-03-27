@@ -1771,3 +1771,34 @@ pre code {
 .table-warning,
 .table-warning > td,
 .table-warning > th {
+  background-color: #ffeeba;
+}
+.table-warning tbody + tbody,
+.table-warning td,
+.table-warning th,
+.table-warning thead th {
+  border-color: #ffdf7e;
+}
+.table-hover .table-warning:hover {
+  background-color: #ffe8a1;
+}
+.table-hover .table-warning:hover > td,
+.table-hover .table-warning:hover > th {
+  background-color: #ffe8a1;
+}
+.table-danger,
+.table-danger > td,
+.table-danger > th {
+  background-color: #f5c6cb;
+}
+.table-danger tbody + tbody,
+.table-danger td,
+.table-danger th,
+.table-danger thead th {
+  border-color: #ed969e;
+}
+.table-hover .table-danger:hover {
+  background-color: #f1b0b7;
+}
+.table-hover .table-danger:hover > td,
+.table-hover .table-danger:hover > th {
