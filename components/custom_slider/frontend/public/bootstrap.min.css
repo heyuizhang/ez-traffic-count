@@ -1689,3 +1689,36 @@ pre code {
 .table-borderless thead th {
   border: 0;
 }
+.table-striped tbody tr:nth-of-type(odd) {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+.table-hover tbody tr:hover {
+  color: #212529;
+  background-color: rgba(0, 0, 0, 0.075);
+}
+.table-primary,
+.table-primary > td,
+.table-primary > th {
+  background-color: #b8daff;
+}
+.table-primary tbody + tbody,
+.table-primary td,
+.table-primary th,
+.table-primary thead th {
+  border-color: #7abaff;
+}
+.table-hover .table-primary:hover {
+  background-color: #9fcdff;
+}
+.table-hover .table-primary:hover > td,
+.table-hover .table-primary:hover > th {
+  background-color: #9fcdff;
+}
+.table-secondary,
+.table-secondary > td,
+.table-secondary > th {
+  background-color: #d6d8db;
+}
+.table-secondary tbody + tbody,
+.table-secondary td,
+.table-secondary th,
