@@ -2959,3 +2959,42 @@ fieldset:disabled a.btn {
 .btn-outline-dark.disabled,
 .btn-outline-dark:disabled {
   color: #343a40;
+  background-color: transparent;
+}
+.btn-outline-dark:not(:disabled):not(.disabled).active,
+.btn-outline-dark:not(:disabled):not(.disabled):active,
+.show > .btn-outline-dark.dropdown-toggle {
+  color: #fff;
+  background-color: #343a40;
+  border-color: #343a40;
+}
+.btn-outline-dark:not(:disabled):not(.disabled).active:focus,
+.btn-outline-dark:not(:disabled):not(.disabled):active:focus,
+.show > .btn-outline-dark.dropdown-toggle:focus {
+  box-shadow: 0 0 0 0.2rem rgba(52, 58, 64, 0.5);
+}
+.btn-link {
+  font-weight: 400;
+  color: #007bff;
+  text-decoration: none;
+}
+.btn-link:hover {
+  color: #0056b3;
+  text-decoration: underline;
+}
+.btn-link.focus,
+.btn-link:focus {
+  text-decoration: underline;
+}
+.btn-link.disabled,
+.btn-link:disabled {
+  color: #6c757d;
+  pointer-events: none;
+}
+.btn-group-lg > .btn,
+.btn-lg {
+  padding: 0.5rem 1rem;
+  font-size: 1.25rem;
+  line-height: 1.5;
+  border-radius: 0.3rem;
+}
