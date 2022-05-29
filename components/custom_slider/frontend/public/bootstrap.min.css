@@ -3440,3 +3440,38 @@ input[type="submit"].btn-block {
 .input-group > .custom-file:not(:first-child) .custom-file-label {
   border-top-left-radius: 0;
   border-bottom-left-radius: 0;
+}
+.input-group-append,
+.input-group-prepend {
+  display: -ms-flexbox;
+  display: flex;
+}
+.input-group-append .btn,
+.input-group-prepend .btn {
+  position: relative;
+  z-index: 2;
+}
+.input-group-append .btn:focus,
+.input-group-prepend .btn:focus {
+  z-index: 3;
+}
+.input-group-append .btn + .btn,
+.input-group-append .btn + .input-group-text,
+.input-group-append .input-group-text + .btn,
+.input-group-append .input-group-text + .input-group-text,
+.input-group-prepend .btn + .btn,
+.input-group-prepend .btn + .input-group-text,
+.input-group-prepend .input-group-text + .btn,
+.input-group-prepend .input-group-text + .input-group-text {
+  margin-left: -1px;
+}
+.input-group-prepend {
+  margin-right: -1px;
+}
+.input-group-append {
+  margin-left: -1px;
+}
+.input-group-text {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
