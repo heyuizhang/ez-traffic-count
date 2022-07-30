@@ -4753,3 +4753,67 @@ input[type="submit"].btn-block {
 }
 .pagination-lg .page-link {
   padding: 0.75rem 1.5rem;
+  font-size: 1.25rem;
+  line-height: 1.5;
+}
+.pagination-lg .page-item:first-child .page-link {
+  border-top-left-radius: 0.3rem;
+  border-bottom-left-radius: 0.3rem;
+}
+.pagination-lg .page-item:last-child .page-link {
+  border-top-right-radius: 0.3rem;
+  border-bottom-right-radius: 0.3rem;
+}
+.pagination-sm .page-link {
+  padding: 0.25rem 0.5rem;
+  font-size: 0.875rem;
+  line-height: 1.5;
+}
+.pagination-sm .page-item:first-child .page-link {
+  border-top-left-radius: 0.2rem;
+  border-bottom-left-radius: 0.2rem;
+}
+.pagination-sm .page-item:last-child .page-link {
+  border-top-right-radius: 0.2rem;
+  border-bottom-right-radius: 0.2rem;
+}
+.badge {
+  display: inline-block;
+  padding: 0.25em 0.4em;
+  font-size: 75%;
+  font-weight: 700;
+  line-height: 1;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: baseline;
+  border-radius: 0.25rem;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+@media (prefers-reduced-motion: reduce) {
+  .badge {
+    transition: none;
+  }
+}
+a.badge:focus,
+a.badge:hover {
+  text-decoration: none;
+}
+.badge:empty {
+  display: none;
+}
+.btn .badge {
+  position: relative;
+  top: -1px;
+}
+.badge-pill {
+  padding-right: 0.6em;
+  padding-left: 0.6em;
+  border-radius: 10rem;
+}
+.badge-primary {
+  color: #fff;
+  background-color: #007bff;
+}
+a.badge-primary:focus,
+a.badge-primary:hover {
