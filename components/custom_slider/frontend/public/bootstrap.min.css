@@ -4856,3 +4856,39 @@ a.badge-success:focus {
 .badge-info {
   color: #fff;
   background-color: #17a2b8;
+}
+a.badge-info:focus,
+a.badge-info:hover {
+  color: #fff;
+  background-color: #117a8b;
+}
+a.badge-info.focus,
+a.badge-info:focus {
+  outline: 0;
+  box-shadow: 0 0 0 0.2rem rgba(23, 162, 184, 0.5);
+}
+.badge-warning {
+  color: #212529;
+  background-color: #ffc107;
+}
+a.badge-warning:focus,
+a.badge-warning:hover {
+  color: #212529;
+  background-color: #d39e00;
+}
+a.badge-warning.focus,
+a.badge-warning:focus {
+  outline: 0;
+  box-shadow: 0 0 0 0.2rem rgba(255, 193, 7, 0.5);
+}
+.badge-danger {
+  color: #fff;
+  background-color: #dc3545;
+}
+a.badge-danger:focus,
+a.badge-danger:hover {
+  color: #fff;
+  background-color: #bd2130;
+}
+a.badge-danger.focus,
+a.badge-danger:focus {
