@@ -5165,3 +5165,46 @@ a.badge-dark:focus {
   border-top-right-radius: inherit;
 }
 .list-group-item:last-child {
+  border-bottom-right-radius: inherit;
+  border-bottom-left-radius: inherit;
+}
+.list-group-item.disabled,
+.list-group-item:disabled {
+  color: #6c757d;
+  pointer-events: none;
+  background-color: #fff;
+}
+.list-group-item.active {
+  z-index: 2;
+  color: #fff;
+  background-color: #007bff;
+  border-color: #007bff;
+}
+.list-group-item + .list-group-item {
+  border-top-width: 0;
+}
+.list-group-item + .list-group-item.active {
+  margin-top: -1px;
+  border-top-width: 1px;
+}
+.list-group-horizontal {
+  -ms-flex-direction: row;
+  flex-direction: row;
+}
+.list-group-horizontal > .list-group-item:first-child {
+  border-bottom-left-radius: 0.25rem;
+  border-top-right-radius: 0;
+}
+.list-group-horizontal > .list-group-item:last-child {
+  border-top-right-radius: 0.25rem;
+  border-bottom-left-radius: 0;
+}
+.list-group-horizontal > .list-group-item.active {
+  margin-top: 0;
+}
+.list-group-horizontal > .list-group-item + .list-group-item {
+  border-top-width: 1px;
+  border-left-width: 0;
+}
+.list-group-horizontal > .list-group-item + .list-group-item.active {
+  margin-left: -1px;
