@@ -5292,3 +5292,38 @@ a.badge-dark:focus {
   }
   .list-group-horizontal-xl > .list-group-item:first-child {
     border-bottom-left-radius: 0.25rem;
+    border-top-right-radius: 0;
+  }
+  .list-group-horizontal-xl > .list-group-item:last-child {
+    border-top-right-radius: 0.25rem;
+    border-bottom-left-radius: 0;
+  }
+  .list-group-horizontal-xl > .list-group-item.active {
+    margin-top: 0;
+  }
+  .list-group-horizontal-xl > .list-group-item + .list-group-item {
+    border-top-width: 1px;
+    border-left-width: 0;
+  }
+  .list-group-horizontal-xl > .list-group-item + .list-group-item.active {
+    margin-left: -1px;
+    border-left-width: 1px;
+  }
+}
+.list-group-flush {
+  border-radius: 0;
+}
+.list-group-flush > .list-group-item {
+  border-width: 0 0 1px;
+}
+.list-group-flush > .list-group-item:last-child {
+  border-bottom-width: 0;
+}
+.list-group-item-primary {
+  color: #004085;
+  background-color: #b8daff;
+}
+.list-group-item-primary.list-group-item-action:focus,
+.list-group-item-primary.list-group-item-action:hover {
+  color: #004085;
+  background-color: #9fcdff;
