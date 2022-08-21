@@ -5410,3 +5410,53 @@ a.badge-dark:focus {
 .list-group-item-light.list-group-item-action:focus,
 .list-group-item-light.list-group-item-action:hover {
   color: #818182;
+  background-color: #ececf6;
+}
+.list-group-item-light.list-group-item-action.active {
+  color: #fff;
+  background-color: #818182;
+  border-color: #818182;
+}
+.list-group-item-dark {
+  color: #1b1e21;
+  background-color: #c6c8ca;
+}
+.list-group-item-dark.list-group-item-action:focus,
+.list-group-item-dark.list-group-item-action:hover {
+  color: #1b1e21;
+  background-color: #b9bbbe;
+}
+.list-group-item-dark.list-group-item-action.active {
+  color: #fff;
+  background-color: #1b1e21;
+  border-color: #1b1e21;
+}
+.close {
+  float: right;
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 1;
+  color: #000;
+  text-shadow: 0 1px 0 #fff;
+  opacity: 0.5;
+}
+.close:hover {
+  color: #000;
+  text-decoration: none;
+}
+.close:not(:disabled):not(.disabled):focus,
+.close:not(:disabled):not(.disabled):hover {
+  opacity: 0.75;
+}
+button.close {
+  padding: 0;
+  background-color: transparent;
+  border: 0;
+}
+a.close.disabled {
+  pointer-events: none;
+}
+.toast {
+  max-width: 350px;
+  overflow: hidden;
+  font-size: 0.875rem;
