@@ -5848,3 +5848,34 @@ a.close.disabled {
 .popover .arrow::before {
   position: absolute;
   display: block;
+  content: "";
+  border-color: transparent;
+  border-style: solid;
+}
+.bs-popover-auto[x-placement^="top"],
+.bs-popover-top {
+  margin-bottom: 0.5rem;
+}
+.bs-popover-auto[x-placement^="top"] > .arrow,
+.bs-popover-top > .arrow {
+  bottom: calc(-0.5rem - 1px);
+}
+.bs-popover-auto[x-placement^="top"] > .arrow::before,
+.bs-popover-top > .arrow::before {
+  bottom: 0;
+  border-width: 0.5rem 0.5rem 0;
+  border-top-color: rgba(0, 0, 0, 0.25);
+}
+.bs-popover-auto[x-placement^="top"] > .arrow::after,
+.bs-popover-top > .arrow::after {
+  bottom: 1px;
+  border-width: 0.5rem 0.5rem 0;
+  border-top-color: #fff;
+}
+.bs-popover-auto[x-placement^="right"],
+.bs-popover-right {
+  margin-left: 0.5rem;
+}
+.bs-popover-auto[x-placement^="right"] > .arrow,
+.bs-popover-right > .arrow {
+  left: calc(-0.5rem - 1px);
