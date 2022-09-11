@@ -5923,3 +5923,38 @@ a.close.disabled {
   display: block;
   width: 1rem;
   margin-left: -0.5rem;
+  content: "";
+  border-bottom: 1px solid #f7f7f7;
+}
+.bs-popover-auto[x-placement^="left"],
+.bs-popover-left {
+  margin-right: 0.5rem;
+}
+.bs-popover-auto[x-placement^="left"] > .arrow,
+.bs-popover-left > .arrow {
+  right: calc(-0.5rem - 1px);
+  width: 0.5rem;
+  height: 1rem;
+  margin: 0.3rem 0;
+}
+.bs-popover-auto[x-placement^="left"] > .arrow::before,
+.bs-popover-left > .arrow::before {
+  right: 0;
+  border-width: 0.5rem 0 0.5rem 0.5rem;
+  border-left-color: rgba(0, 0, 0, 0.25);
+}
+.bs-popover-auto[x-placement^="left"] > .arrow::after,
+.bs-popover-left > .arrow::after {
+  right: 1px;
+  border-width: 0.5rem 0 0.5rem 0.5rem;
+  border-left-color: #fff;
+}
+.popover-header {
+  padding: 0.5rem 0.75rem;
+  margin-bottom: 0;
+  font-size: 1rem;
+  background-color: #f7f7f7;
+  border-bottom: 1px solid #ebebeb;
+  border-top-left-radius: calc(0.3rem - 1px);
+  border-top-right-radius: calc(0.3rem - 1px);
+}
