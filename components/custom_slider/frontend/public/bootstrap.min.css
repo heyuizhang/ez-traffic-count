@@ -7527,3 +7527,40 @@ button.bg-dark:hover {
 .my-1 {
   margin-top: 0.25rem !important;
 }
+.mr-1,
+.mx-1 {
+  margin-right: 0.25rem !important;
+}
+.mb-1,
+.my-1 {
+  margin-bottom: 0.25rem !important;
+}
+.ml-1,
+.mx-1 {
+  margin-left: 0.25rem !important;
+}
+.m-2 {
+  margin: 0.5rem !important;
+}
+.mt-2,
+.my-2 {
+  margin-top: 0.5rem !important;
+}
+.mr-2,
+.mx-2 {
+  margin-right: 0.5rem !important;
+}
+.mb-2,
+.my-2 {
+  margin-bottom: 0.5rem !important;
+}
+.ml-2,
+.mx-2 {
+  margin-left: 0.5rem !important;
+}
+.m-3 {
+  margin: 1rem !important;
+}
+.mt-3,
+.my-3 {
+  margin-top: 1rem !important;
