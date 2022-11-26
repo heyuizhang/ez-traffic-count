@@ -7731,3 +7731,41 @@ button.bg-dark:hover {
 }
 .m-n1 {
   margin: -0.25rem !important;
+}
+.mt-n1,
+.my-n1 {
+  margin-top: -0.25rem !important;
+}
+.mr-n1,
+.mx-n1 {
+  margin-right: -0.25rem !important;
+}
+.mb-n1,
+.my-n1 {
+  margin-bottom: -0.25rem !important;
+}
+.ml-n1,
+.mx-n1 {
+  margin-left: -0.25rem !important;
+}
+.m-n2 {
+  margin: -0.5rem !important;
+}
+.mt-n2,
+.my-n2 {
+  margin-top: -0.5rem !important;
+}
+.mr-n2,
+.mx-n2 {
+  margin-right: -0.5rem !important;
+}
+.mb-n2,
+.my-n2 {
+  margin-bottom: -0.5rem !important;
+}
+.ml-n2,
+.mx-n2 {
+  margin-left: -0.5rem !important;
+}
+.m-n3 {
+  margin: -1rem !important;
