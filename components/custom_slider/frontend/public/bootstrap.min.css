@@ -7813,3 +7813,53 @@ button.bg-dark:hover {
   margin-top: -3rem !important;
 }
 .mr-n5,
+.mx-n5 {
+  margin-right: -3rem !important;
+}
+.mb-n5,
+.my-n5 {
+  margin-bottom: -3rem !important;
+}
+.ml-n5,
+.mx-n5 {
+  margin-left: -3rem !important;
+}
+.m-auto {
+  margin: auto !important;
+}
+.mt-auto,
+.my-auto {
+  margin-top: auto !important;
+}
+.mr-auto,
+.mx-auto {
+  margin-right: auto !important;
+}
+.mb-auto,
+.my-auto {
+  margin-bottom: auto !important;
+}
+.ml-auto,
+.mx-auto {
+  margin-left: auto !important;
+}
+@media (min-width: 576px) {
+  .m-sm-0 {
+    margin: 0 !important;
+  }
+  .mt-sm-0,
+  .my-sm-0 {
+    margin-top: 0 !important;
+  }
+  .mr-sm-0,
+  .mx-sm-0 {
+    margin-right: 0 !important;
+  }
+  .mb-sm-0,
+  .my-sm-0 {
+    margin-bottom: 0 !important;
+  }
+  .ml-sm-0,
+  .mx-sm-0 {
+    margin-left: 0 !important;
+  }
