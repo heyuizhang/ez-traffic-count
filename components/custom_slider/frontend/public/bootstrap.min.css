@@ -9363,3 +9363,48 @@ a.text-info:hover {
   color: #ffc107 !important;
 }
 a.text-warning:focus,
+a.text-warning:hover {
+  color: #ba8b00 !important;
+}
+.text-danger {
+  color: #dc3545 !important;
+}
+a.text-danger:focus,
+a.text-danger:hover {
+  color: #a71d2a !important;
+}
+.text-light {
+  color: #f8f9fa !important;
+}
+a.text-light:focus,
+a.text-light:hover {
+  color: #cbd3da !important;
+}
+.text-dark {
+  color: #343a40 !important;
+}
+a.text-dark:focus,
+a.text-dark:hover {
+  color: #121416 !important;
+}
+.text-body {
+  color: #212529 !important;
+}
+.text-muted {
+  color: #6c757d !important;
+}
+.text-black-50 {
+  color: rgba(0, 0, 0, 0.5) !important;
+}
+.text-white-50 {
+  color: rgba(255, 255, 255, 0.5) !important;
+}
+.text-hide {
+  font: 0/0 a;
+  color: transparent;
+  text-shadow: none;
+  background-color: transparent;
+  border: 0;
+}
+.text-decoration-none {
+  text-decoration: none !important;
