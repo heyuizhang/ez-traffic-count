@@ -9408,3 +9408,38 @@ a.text-dark:hover {
 }
 .text-decoration-none {
   text-decoration: none !important;
+}
+.text-break {
+  word-wrap: break-word !important;
+}
+.text-reset {
+  color: inherit !important;
+}
+.visible {
+  visibility: visible !important;
+}
+.invisible {
+  visibility: hidden !important;
+}
+@media print {
+  *,
+  ::after,
+  ::before {
+    text-shadow: none !important;
+    box-shadow: none !important;
+  }
+  a:not(.btn) {
+    text-decoration: underline;
+  }
+  abbr[title]::after {
+    content: " (" attr(title) ")";
+  }
+  pre {
+    white-space: pre-wrap !important;
+  }
+  blockquote,
+  pre {
+    border: 1px solid #adb5bd;
+    page-break-inside: avoid;
+  }
+  thead {
