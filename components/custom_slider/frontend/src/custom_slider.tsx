@@ -3,4 +3,5 @@ import {
   Streamlit,
   StreamlitComponentBase,
   withStreamlitConnection
-} from "streamli
+} from "streamlit-component-lib";
+import React, { ReactNode
