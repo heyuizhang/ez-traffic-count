@@ -7,3 +7,5 @@ import {
 import React, { ReactNode } from "react";
 
 interface pythonArgs {
+  label: string
+  minVal: numbe
