@@ -4,4 +4,6 @@ import {
   StreamlitComponentBase,
   withStreamlitConnection
 } from "streamlit-component-lib";
-import React, { ReactNode
+import React, { ReactNode } from "react";
+
+interface pythonArgs {
