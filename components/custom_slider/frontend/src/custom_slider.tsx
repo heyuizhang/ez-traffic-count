@@ -8,4 +8,6 @@ import React, { ReactNode } from "react";
 
 interface pythonArgs {
   label: string
-  minVal: numbe
+  minVal: number
+  maxVal: number
+  InitialValue: num
