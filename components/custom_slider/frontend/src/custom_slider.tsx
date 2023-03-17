@@ -16,4 +16,6 @@ interface pythonArgs {
 
 }
 
-const st
+const styles = {
+  color: "#f0f2f6",
+  stPrimary: "#f6
