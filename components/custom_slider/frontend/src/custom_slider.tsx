@@ -10,4 +10,10 @@ interface pythonArgs {
   label: string
   minVal: number
   maxVal: number
-  InitialValue: num
+  InitialValue: number
+  enabled: boolean
+
+
+}
+
+const st
