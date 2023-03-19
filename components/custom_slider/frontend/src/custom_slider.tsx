@@ -26,3 +26,7 @@ const StyledSlider = withStyles({
     color: styles.stPrimary,
     background: styles.color,
     marginTop: 15,
+    marginLeft: 15,
+    width: 265,
+
+  },
