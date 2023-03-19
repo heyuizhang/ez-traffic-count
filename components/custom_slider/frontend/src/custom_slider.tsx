@@ -21,4 +21,7 @@ const styles = {
   stPrimary: "#f63366",
 };
 
-const StyledSlider = withSty
+const StyledSlider = withStyles({
+  root: {
+    color: styles.stPrimary,
+    
