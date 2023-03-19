@@ -18,4 +18,7 @@ interface pythonArgs {
 
 const styles = {
   color: "#f0f2f6",
-  stPrimary: "#f6
+  stPrimary: "#f63366",
+};
+
+const StyledSlider = withSty
