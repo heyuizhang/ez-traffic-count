@@ -24,4 +24,5 @@ const styles = {
 const StyledSlider = withStyles({
   root: {
     color: styles.stPrimary,
-    
+    background: styles.color,
+    marginTop: 15,
