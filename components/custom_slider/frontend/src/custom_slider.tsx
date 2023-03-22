@@ -30,3 +30,7 @@ const StyledSlider = withStyles({
     width: 265,
 
   },
+  thumb: {
+    height: 24,
+    width: 24,
+ 
