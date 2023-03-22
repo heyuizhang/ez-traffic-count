@@ -33,4 +33,5 @@ const StyledSlider = withStyles({
   thumb: {
     height: 24,
     width: 24,
- 
+    backgroundColor: '#fff',
+    bor
