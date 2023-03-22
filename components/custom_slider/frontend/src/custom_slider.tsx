@@ -34,4 +34,5 @@ const StyledSlider = withStyles({
     height: 24,
     width: 24,
     backgroundColor: '#fff',
-    bor
+    border: '2px solid currentColor',
+    margi
