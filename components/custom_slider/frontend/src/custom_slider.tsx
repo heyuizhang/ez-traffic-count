@@ -38,4 +38,7 @@ const StyledSlider = withStyles({
     marginTop: -8,
     marginLeft: -12,
     '&:focus,&:hover,&$active': {
-      boxShado
+      boxShadow: 'inherit',
+    },
+  },
+  active: {},
