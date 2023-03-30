@@ -42,3 +42,5 @@ const StyledSlider = withStyles({
     },
   },
   active: {},
+  valueLabel: {
+    left: 'calc(-50% + 
