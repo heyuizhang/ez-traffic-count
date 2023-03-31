@@ -46,4 +46,7 @@ const StyledSlider = withStyles({
     left: 'calc(-50% + 4px)',
   },
   track: {
-    height: 3
+    height: 3,
+    borderRadius: 3,
+  },
+  rail: 
