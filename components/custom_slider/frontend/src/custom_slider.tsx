@@ -43,4 +43,7 @@ const StyledSlider = withStyles({
   },
   active: {},
   valueLabel: {
-    left: 'calc(-50% + 
+    left: 'calc(-50% + 4px)',
+  },
+  track: {
+    height: 3
