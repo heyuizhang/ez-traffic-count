@@ -49,4 +49,6 @@ const StyledSlider = withStyles({
     height: 3,
     borderRadius: 3,
   },
-  rail: 
+  rail: {
+    height: 3,
+    borderRadius: 4,
