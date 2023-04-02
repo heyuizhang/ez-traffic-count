@@ -52,3 +52,8 @@ const StyledSlider = withStyles({
   rail: {
     height: 3,
     borderRadius: 4,
+  },
+})(Slider);
+
+
+class CustomSlider extends 
