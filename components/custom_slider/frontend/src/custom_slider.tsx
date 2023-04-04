@@ -57,4 +57,6 @@ const StyledSlider = withStyles({
 
 
 class CustomSlider extends StreamlitComponentBase {
-  publ
+  public render = (): ReactNode => {
+
+    const d
