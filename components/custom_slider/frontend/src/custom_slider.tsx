@@ -56,4 +56,5 @@ const StyledSlider = withStyles({
 })(Slider);
 
 
-class CustomSlider extends 
+class CustomSlider extends StreamlitComponentBase {
+  publ
