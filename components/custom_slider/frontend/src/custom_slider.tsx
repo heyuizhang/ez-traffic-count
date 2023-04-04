@@ -59,4 +59,5 @@ const StyledSlider = withStyles({
 class CustomSlider extends StreamlitComponentBase {
   public render = (): ReactNode => {
 
-    const d
+    const div_style = {
+      background: styles.color
