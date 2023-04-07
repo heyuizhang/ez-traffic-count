@@ -60,4 +60,6 @@ class CustomSlider extends StreamlitComponentBase {
   public render = (): ReactNode => {
 
     const div_style = {
-      background: styles.color
+      background: styles.color, 
+      height: '85px',
+   
