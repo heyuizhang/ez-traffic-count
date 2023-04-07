@@ -62,4 +62,5 @@ class CustomSlider extends StreamlitComponentBase {
     const div_style = {
       background: styles.color, 
       height: '85px',
-   
+    }
+    const {label, minVal, maxVal,
