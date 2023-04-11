@@ -63,4 +63,7 @@ class CustomSlider extends StreamlitComponentBase {
       background: styles.color, 
       height: '85px',
     }
-    const {label, minVal, maxVal, InitialValue, enabled} : pythonArgs = thi
+    const {label, minVal, maxVal, InitialValue, enabled} : pythonArgs = this.props.args 
+
+    return(
+      <div style={div
