@@ -72,3 +72,5 @@ class CustomSlider extends StreamlitComponentBase {
         valueLabelDisplay="auto" 
         max={maxVal}
         min={minVal}
+        defaultValue={InitialValue} 
+   
