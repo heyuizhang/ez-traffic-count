@@ -69,4 +69,5 @@ class CustomSlider extends StreamlitComponentBase {
       <div style={div_style}>
         {label} 
         <StyledSlider
- 
+        valueLabelDisplay="auto" 
+   
