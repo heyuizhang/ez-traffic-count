@@ -73,4 +73,4 @@ class CustomSlider extends StreamlitComponentBase {
         max={maxVal}
         min={minVal}
         defaultValue={InitialValue} 
-   
+        onChangeCommitted={(event: any, value : an
