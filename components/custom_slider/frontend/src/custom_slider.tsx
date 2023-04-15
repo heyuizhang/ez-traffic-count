@@ -75,3 +75,5 @@ class CustomSlider extends StreamlitComponentBase {
         defaultValue={InitialValue} 
         onChangeCommitted={(event: any, value : any) => {
           Streamlit.setComponentValue(Number(value))
+        }}
+        disabled={!enabled}
