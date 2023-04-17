@@ -77,3 +77,9 @@ class CustomSlider extends StreamlitComponentBase {
           Streamlit.setComponentValue(Number(value))
         }}
         disabled={!enabled}
+        />
+      </div>
+    )
+  }
+
+}
