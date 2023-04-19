@@ -85,4 +85,4 @@ class CustomSlider extends StreamlitComponentBase {
 }
 
 
-export default withStreamlitConnect
+export default withStreamlitConnection(CustomSlider)
