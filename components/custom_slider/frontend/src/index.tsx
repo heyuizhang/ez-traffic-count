@@ -1,3 +1,5 @@
 import React from "react"
 import ReactDOM from "react-dom"
-import CustomSlider from "./custom_slide
+import CustomSlider from "./custom_slider"
+
+import { Client as Styletron } from "st
