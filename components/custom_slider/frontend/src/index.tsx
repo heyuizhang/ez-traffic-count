@@ -8,4 +8,7 @@ import { ThemeProvider, LightTheme } from "baseui"
 
 const engine = new Styletron()
 
-// Wrap your CustomSlider with the baseui the
+// Wrap your CustomSlider with the baseui them
+ReactDOM.render(
+  <React.StrictMode>
+ 
