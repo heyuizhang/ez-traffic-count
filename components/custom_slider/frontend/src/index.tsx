@@ -12,4 +12,5 @@ const engine = new Styletron()
 ReactDOM.render(
   <React.StrictMode>
     <CustomSlider />
-  </React.Strict
+  </React.StrictMode>,
+  document.getElementById("ro
