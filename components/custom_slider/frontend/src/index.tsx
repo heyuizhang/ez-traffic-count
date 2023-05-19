@@ -13,4 +13,5 @@ ReactDOM.render(
   <React.StrictMode>
     <CustomSlider />
   </React.StrictMode>,
-  document.getElementById("ro
+  document.getElementById("root")
+)
