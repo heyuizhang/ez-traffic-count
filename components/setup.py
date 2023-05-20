@@ -5,4 +5,6 @@ setuptools.setup(
     version="0.0.1",
     author="",
     author_email="",
-    descri
+    description="",
+    long_description="",
+   
