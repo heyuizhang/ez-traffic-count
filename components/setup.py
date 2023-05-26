@@ -9,4 +9,4 @@ setuptools.setup(
     long_description="",
     long_description_content_type="text/plain",
     url="",
-    packages=
+    packages=setuptools.find_packages(),
