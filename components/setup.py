@@ -14,4 +14,5 @@ setuptools.setup(
     classifiers=[],
     python_requires=">=3.6",
     install_requires=[
-        # By definition, a Cust
+        # By definition, a Custom Component depends on Streamlit.
+     
