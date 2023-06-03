@@ -11,4 +11,6 @@ setuptools.setup(
     url="",
     packages=setuptools.find_packages(),
     include_package_data=True,
-    classifi
+    classifiers=[],
+    python_requires=">=3.6",
+    in
