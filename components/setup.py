@@ -13,4 +13,5 @@ setuptools.setup(
     include_package_data=True,
     classifiers=[],
     python_requires=">=3.6",
-    in
+    install_requires=[
+        # By definition, a Cust
