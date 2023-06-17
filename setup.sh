@@ -1,4 +1,6 @@
 mkdir -p ~/.streamlit/
 echo "[server]\n\
 headless=true\n\
-p
+port=$PORT\n\
+enableCORS=false\n\
+">~/.stre
