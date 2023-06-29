@@ -3,3 +3,4 @@ Usage
 -----
 >>> import SessionState
 >>>
+>>> session_state = SessionState.get(user_name='
