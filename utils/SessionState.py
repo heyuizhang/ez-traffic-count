@@ -3,4 +3,5 @@ Usage
 -----
 >>> import SessionState
 >>>
->>> session_state = SessionState.get(user_name='
+>>> session_state = SessionState.get(user_name='', favorite_color='black')
+>>> session_stat
