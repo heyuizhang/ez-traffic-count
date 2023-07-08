@@ -6,4 +6,5 @@ Usage
 >>> session_state = SessionState.get(user_name='', favorite_color='black')
 >>> session_state.user_name
 ''
->>> session_state.user_name = 
+>>> session_state.user_name = 'Mary'
+>>> session_state.favorite_color
