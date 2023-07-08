@@ -8,3 +8,5 @@ Usage
 ''
 >>> session_state.user_name = 'Mary'
 >>> session_state.favorite_color
+'black'
+Since you set user_name above,
