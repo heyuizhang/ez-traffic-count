@@ -14,3 +14,6 @@ result:
 >>> session_state = get(user_name='', favorite_color='black')
 >>> session_state.user_name
 'Mary'
+"""
+try:
+    import streamlit.ReportThread
