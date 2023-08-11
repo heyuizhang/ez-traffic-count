@@ -21,4 +21,8 @@ try:
 except Exception:
     # Streamlit >= 0.65.0
     import streamlit.report_thread as ReportThread
-    from streamlit.server.server import Serve
+    from streamlit.server.server import Server
+
+
+class SessionState(object):
+    def
