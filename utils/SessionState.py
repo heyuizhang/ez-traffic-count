@@ -25,4 +25,5 @@ except Exception:
 
 
 class SessionState(object):
-    def
+    def __init__(self, **kwargs):
+        
