@@ -26,4 +26,5 @@ except Exception:
 
 class SessionState(object):
     def __init__(self, **kwargs):
-        
+        """A new SessionState object.
+        Pa
