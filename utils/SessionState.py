@@ -30,4 +30,5 @@ class SessionState(object):
         Parameters
         ----------
         **kwargs : any
-            Defau
+            Default values for the session state.
+        
