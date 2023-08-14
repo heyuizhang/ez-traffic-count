@@ -29,4 +29,5 @@ class SessionState(object):
         """A new SessionState object.
         Parameters
         ----------
-  
+        **kwargs : any
+            Defau
