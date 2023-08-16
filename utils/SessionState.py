@@ -31,4 +31,6 @@ class SessionState(object):
         ----------
         **kwargs : any
             Default values for the session state.
-        
+        Example
+        -------
+       
