@@ -33,4 +33,4 @@ class SessionState(object):
             Default values for the session state.
         Example
         -------
-       
+        >>> session_state = SessionState(user_name='',
