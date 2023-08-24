@@ -34,4 +34,6 @@ class SessionState(object):
         Example
         -------
         >>> session_state = SessionState(user_name='', favorite_color='black')
-        >>> sessi
+        >>> session_state.user_name = 'Mary'
+        ''
+  
