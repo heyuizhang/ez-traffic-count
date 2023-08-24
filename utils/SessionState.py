@@ -37,4 +37,6 @@ class SessionState(object):
         >>> session_state.user_name = 'Mary'
         ''
         >>> session_state.favorite_color
-  
+        'black'
+        """
+        for key
