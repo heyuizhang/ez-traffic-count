@@ -39,4 +39,5 @@ class SessionState(object):
         >>> session_state.favorite_color
         'black'
         """
-        for key
+        for key, val in kwargs.items():
+            setat
