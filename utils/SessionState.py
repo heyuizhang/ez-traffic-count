@@ -43,4 +43,5 @@ class SessionState(object):
             setattr(self, key, val)
 
 
-def get(**kwar
+def get(**kwargs):
+    """Gets a SessionState object for the 
