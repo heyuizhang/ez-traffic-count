@@ -40,4 +40,7 @@ class SessionState(object):
         'black'
         """
         for key, val in kwargs.items():
-            setat
+            setattr(self, key, val)
+
+
+def get(**kwar
