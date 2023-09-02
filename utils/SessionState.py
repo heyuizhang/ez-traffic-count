@@ -45,4 +45,5 @@ class SessionState(object):
 
 def get(**kwargs):
     """Gets a SessionState object for the current session.
-    Creates a new
+    Creates a new object if necessary.
+    Parameters
