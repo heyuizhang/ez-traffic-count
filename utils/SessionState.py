@@ -47,3 +47,6 @@ def get(**kwargs):
     """Gets a SessionState object for the current session.
     Creates a new object if necessary.
     Parameters
+    ----------
+    **kwargs : any
+      
