@@ -53,4 +53,5 @@ def get(**kwargs):
         new one.
     Example
     -------
-    >>> session_state = get(user_name
+    >>> session_state = get(user_name='', favorite_color='black')
+    >>> sess
