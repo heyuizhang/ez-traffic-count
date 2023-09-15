@@ -52,4 +52,5 @@ def get(**kwargs):
         Default values you want to add to the session state, if we're creating a
         new one.
     Example
-    --
+    -------
+    >>> session_state = get(user_name
