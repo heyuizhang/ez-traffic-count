@@ -49,4 +49,7 @@ def get(**kwargs):
     Parameters
     ----------
     **kwargs : any
-        Default values you want to add to the session state, if we're c
+        Default values you want to add to the session state, if we're creating a
+        new one.
+    Example
+    --
