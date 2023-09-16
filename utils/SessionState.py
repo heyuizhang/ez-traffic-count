@@ -57,4 +57,6 @@ def get(**kwargs):
     >>> session_state.user_name
     ''
     >>> session_state.user_name = 'Mary'
-    >>> session_s
+    >>> session_state.favorite_color
+    'black'
+    Since
