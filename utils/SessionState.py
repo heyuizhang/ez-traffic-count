@@ -59,4 +59,6 @@ def get(**kwargs):
     >>> session_state.user_name = 'Mary'
     >>> session_state.favorite_color
     'black'
-    Since you set user_name above, next time your
+    Since you set user_name above, next time your script runs this will be the
+    result:
+    
