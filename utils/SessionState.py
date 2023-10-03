@@ -61,4 +61,5 @@ def get(**kwargs):
     'black'
     Since you set user_name above, next time your script runs this will be the
     result:
-    >>> session_state = get(user_n
+    >>> session_state = get(user_name='', favorite_color='black')
+    >>> se
