@@ -64,4 +64,5 @@ def get(**kwargs):
     >>> session_state = get(user_name='', favorite_color='black')
     >>> session_state.user_name
     'Mary'
-    "
+    """
+    # Hack to get the session obje
