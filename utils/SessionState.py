@@ -65,4 +65,6 @@ def get(**kwargs):
     >>> session_state.user_name
     'Mary'
     """
-    # Hack to get the session obje
+    # Hack to get the session object from Streamlit.
+
+    ctx = ReportThr
