@@ -67,4 +67,6 @@ def get(**kwargs):
     """
     # Hack to get the session object from Streamlit.
 
-    ctx = ReportThr
+    ctx = ReportThread.get_report_ctx()
+
+    this_session 
