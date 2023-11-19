@@ -71,4 +71,6 @@ def get(**kwargs):
 
     this_session = None
 
-    current_server = Server.get_cu
+    current_server = Server.get_current()
+    if hasattr(current_server, '_session_infos'):
+  
