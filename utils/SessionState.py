@@ -69,4 +69,6 @@ def get(**kwargs):
 
     ctx = ReportThread.get_report_ctx()
 
-    this_session 
+    this_session = None
+
+    current_server = Server.get_cu
