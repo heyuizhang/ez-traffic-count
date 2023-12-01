@@ -80,3 +80,5 @@ def get(**kwargs):
 
     for session_info in session_infos:
         s = session_info.session
+        if (
+            # Streamlit < 0.5
