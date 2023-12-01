@@ -82,4 +82,6 @@ def get(**kwargs):
         s = session_info.session
         if (
             # Streamlit < 0.54.0
-            (hasattr(s, '_main_dg') and s
+            (hasattr(s, '_main_dg') and s._main_dg == ctx.main_dg)
+            or
+   
