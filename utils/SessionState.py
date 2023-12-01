@@ -76,4 +76,6 @@ def get(**kwargs):
         # Streamlit < 0.56
         session_infos = Server.get_current()._session_infos.values()
     else:
-        session_infos = Server.get_current()._session_info_by_id.va
+        session_infos = Server.get_current()._session_info_by_id.values()
+
+    for session_info in session_info
