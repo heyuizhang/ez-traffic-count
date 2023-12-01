@@ -74,4 +74,6 @@ def get(**kwargs):
     current_server = Server.get_current()
     if hasattr(current_server, '_session_infos'):
         # Streamlit < 0.56
-        session_infos = Server.get_current()
+        session_infos = Server.get_current()._session_infos.values()
+    else:
+        session_infos =
