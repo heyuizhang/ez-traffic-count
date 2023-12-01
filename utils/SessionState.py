@@ -78,4 +78,5 @@ def get(**kwargs):
     else:
         session_infos = Server.get_current()._session_info_by_id.values()
 
-    for session_info in session_info
+    for session_info in session_infos:
+        s = session_info.session
