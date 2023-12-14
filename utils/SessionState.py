@@ -85,4 +85,5 @@ def get(**kwargs):
             (hasattr(s, '_main_dg') and s._main_dg == ctx.main_dg)
             or
             # Streamlit >= 0.54.0
-            (not hasattr(s, '_main_d
+            (not hasattr(s, '_main_dg') and s.enqueue == ctx.enqueue)
+    
