@@ -89,4 +89,5 @@ def get(**kwargs):
             or
             # Streamlit >= 0.65.2
             (not hasattr(s, '_main_dg') and s._uploaded_file_mgr == ctx.uploaded_file_mgr)
- 
+        ):
+            this
