@@ -97,4 +97,4 @@ def get(**kwargs):
             "Oh noes. Couldn't get your Streamlit Session object. "
             'Are you doing something fancy with threads?')
 
-    # Got
+    # Got the session object! Now let's attach s
