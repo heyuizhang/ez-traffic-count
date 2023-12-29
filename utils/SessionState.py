@@ -92,4 +92,6 @@ def get(**kwargs):
         ):
             this_session = s
 
-    if this_session is N
+    if this_session is None:
+        raise RuntimeError(
+     
