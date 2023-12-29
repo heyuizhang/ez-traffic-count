@@ -95,4 +95,6 @@ def get(**kwargs):
     if this_session is None:
         raise RuntimeError(
             "Oh noes. Couldn't get your Streamlit Session object. "
-            'Are you doing 
+            'Are you doing something fancy with threads?')
+
+    # Got
