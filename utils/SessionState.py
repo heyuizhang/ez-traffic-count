@@ -100,4 +100,4 @@ def get(**kwargs):
     # Got the session object! Now let's attach some state into it.
 
     if not hasattr(this_session, '_custom_session_state'):
-        this_sessio
+        this_session._custom_session_state = SessionStat
