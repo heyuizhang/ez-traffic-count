@@ -99,4 +99,4 @@ def get(**kwargs):
 
     # Got the session object! Now let's attach some state into it.
 
-    if not h
+    if not hasattr(this_session, '_custo
