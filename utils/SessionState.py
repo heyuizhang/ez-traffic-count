@@ -102,4 +102,4 @@ def get(**kwargs):
     if not hasattr(this_session, '_custom_session_state'):
         this_session._custom_session_state = SessionState(**kwargs)
 
-    return this_session._custom_sess
+    return this_session._custom_session_state
