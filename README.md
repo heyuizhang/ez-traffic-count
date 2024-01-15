@@ -10,4 +10,6 @@ To run the application locally, install the necessary python packages with the f
 pip install -r requirements.txt
 ```
 
-For better reproducibility, we recommend setting up a python environment using `
+For better reproducibility, we recommend setting up a python environment using `virtualenv` or any similar package. 
+
+The ap
