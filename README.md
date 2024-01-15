@@ -7,4 +7,7 @@ Hello everyone! This repository houses a work-in-progress application for traffi
 To run the application locally, install the necessary python packages with the following command: 
 
 ```python
-pip install -r requirements.
+pip install -r requirements.txt
+```
+
+For better reproducibility, we r
