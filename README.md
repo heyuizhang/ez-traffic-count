@@ -12,4 +12,4 @@ pip install -r requirements.txt
 
 For better reproducibility, we recommend setting up a python environment using `virtualenv` or any similar package. 
 
-The ap
+The app includes a custom slider. To use it, 
