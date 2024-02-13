@@ -14,3 +14,5 @@ For better reproducibility, we recommend setting up a python environment using `
 
 The app includes a custom slider. To use it, you need to have `npm` installed, and then run the following commands.
 
+```bash
+cd components/custom_slider/frontend/
