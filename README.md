@@ -19,4 +19,6 @@ cd components/custom_slider/frontend/
 npm install 
 ```
 
-Subsequently, run `npm r
+Subsequently, run `npm run build`
+
+This will recreate the b
