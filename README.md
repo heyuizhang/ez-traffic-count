@@ -16,3 +16,7 @@ The app includes a custom slider. To use it, you need to have `npm` installed, a
 
 ```bash
 cd components/custom_slider/frontend/
+npm install 
+```
+
+Subsequently, run `npm r
