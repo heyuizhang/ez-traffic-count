@@ -21,4 +21,6 @@ npm install
 
 Subsequently, run `npm run build`
 
-This will recreate the b
+This will recreate the build package for the custom slider. 
+
+Downloa
