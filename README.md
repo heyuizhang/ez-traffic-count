@@ -23,4 +23,7 @@ Subsequently, run `npm run build`
 
 This will recreate the build package for the custom slider. 
 
-Download the necessary models and data by r
+Download the necessary models and data by running: 
+
+```
+make dependen
