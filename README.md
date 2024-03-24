@@ -26,4 +26,10 @@ This will recreate the build package for the custom slider.
 Download the necessary models and data by running: 
 
 ```
-make dependen
+make dependencies 
+```
+
+To launch the app, type:
+
+```
+strea
