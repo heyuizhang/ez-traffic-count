@@ -35,4 +35,5 @@ To launch the app, type:
 streamlit run app/streamlit-app.py
 ```
 
-## Futu
+## Future Developments
+We have many ideas for enhan
