@@ -36,4 +36,6 @@ streamlit run app/streamlit-app.py
 ```
 
 ## Future Developments
-We have many ideas for enhan
+We have many ideas for enhancements to the API, including: 
+
++ Speed
