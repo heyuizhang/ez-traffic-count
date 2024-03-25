@@ -32,4 +32,7 @@ make dependencies
 To launch the app, type:
 
 ```
-strea
+streamlit run app/streamlit-app.py
+```
+
+## Futu
