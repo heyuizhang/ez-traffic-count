@@ -38,4 +38,5 @@ streamlit run app/streamlit-app.py
 ## Future Developments
 We have many ideas for enhancements to the API, including: 
 
-+ Speed
++ Speed measurement
++ Vehicle distribution mea
