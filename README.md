@@ -39,4 +39,5 @@ streamlit run app/streamlit-app.py
 We have many ideas for enhancements to the API, including: 
 
 + Speed measurement
-+ Vehicle distribution mea
++ Vehicle distribution measurement
++ Tracking traffic density
